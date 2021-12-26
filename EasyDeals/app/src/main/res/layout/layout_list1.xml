@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/images"
+        android:layout_gravity="top"
+        android:scaleType="centerCrop"/>
+
+    <View
+        android:background="@color/textColorSecondary"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+  <LinearLayout
+      android:visibility="gone"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/tv_gp1"
+        style="@style/settings_header"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/tv_gp2"
+        style="@style/settings_header"
+        android:text=""/>
+      <TextView
+          android:id="@+id/tv_sd"
+          style="@style/settings_header"
+          android:text=""/>
+  </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:layout_weight="1">
+    <LinearLayout
+        style="@style/settings_item_layout">
+
+        <TextView
+            style="@style/settings_header"
+            android:text="Dealer Name"/>
+
+        <TextView
+            android:id="@+id/tv_dealer_name"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:hint="Self"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <View
+            android:background="@color/textColorSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+
+        <TextView
+            style="@style/settings_header"
+            android:text="Locality"/>
+
+        <TextView
+            android:id="@+id/tv_locality"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/textColorSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+
+        <TextView
+            style="@style/settings_header"
+            android:text="Address"/>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <View
+            android:background="@color/textColorSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <TextView
+            style="@style/settings_header"
+            android:text="Name"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <View
+            android:background="@color/textColorSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <TextView
+            style="@style/settings_header"
+            android:text="Demand"/>
+        <TextView
+            android:id="@+id/tv_demand"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <View
+            android:background="@color/textColorSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <TextView
+            style="@style/settings_header"
+            android:text="Area"/>
+        <TextView
+            android:id="@+id/tv_area"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <View
+            android:background="@color/textColorSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <TextView
+            style="@style/settings_header"
+            android:text="Description"/>
+        <TextView
+            android:id="@+id/tv_desc"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
